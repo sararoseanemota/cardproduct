@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>card product</title>
+</head>
+<body>
+    <div class="main">
+        <div class="card-product">
+            <div id="product">
+                <img src="src/assets/sofa.png" alt="Imagem Sofá" id="imgContainer"/>
+                <img src="/src/assets/sofa_3D.gif" alt="Sofá 360°" 
+                    id="gifContainer"
+                    class="hidden">
+                <button id="btnOpen360" onclick="open360()">
+                    <img src="src/assets/icon3D.png" alt="Icon 360">
+                </button>    
+                <button id="btnClose360" onclick="close360()" class="hidden">
+                    <img src="src/assets/close.png" alt="Icon 360">
+                </button>    
+            </div>
+
+            <div id="info-product">
+                <span class="codProduct">CÓDIGO: 42404</span>
+                <h3 class="nameProduct">Sofá Margot II - Rosé</h3>
+                <span class="amountProduct">R$4.000,00</span>
+                <button class="addCart">ADICIONAR À CESTA</button>
+            </div>
+        </div>
+    </div> 
+    <script src="src/js/script.js"></script>
+</body>
+</html>

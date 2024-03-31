@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-primary: #D9CDF7;
+    --text-primary: #271A45
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-primary);
+    font-family: 'Lato', sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card-product{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hidden{
+    display: none;
+}
+
+#imgContainer, #gifContainer {
+    height: 400px;
+    overflow: hidden;
+}
+
+
+#btnOpen360, #btnClose360{
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+    margin-left: -100px;
+}
+
+#product {
+    height: 200px;
+}
+
+#info-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    color: var(--text-primary);
+}
+
+.codProduct{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.nameProduct {
+    font-family: 'Crimson Pro', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.amountProduct{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;  
+}
+
+.addCart {
+    background: transparent;
+    padding: 15px;
+    max-width: 200px;
+    margin-top: 20px;
+
+    border: 1px solid var(--text-primary);
+    border-radius: 99px;
+    cursor: pointer;
+}
